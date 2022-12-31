@@ -5,13 +5,32 @@ body{
 h2{
 	text-align: center;
 	color:#3c6767;
+
 }
+
+ header{
+	display:flex;
+	justify-content: space-around;
+	  background-image:url("header.jpg") ;
+  align-items: center;
+   border: 3px solid #9daccc;
+   box-shadow: 0 0 50px 50px #9daccc inset; 
+	 background-size: cover;
+	
+} 
+
+
+
+
+
+
 
 .my_div {
   transition: all 500ms ease-in-out;
 }
 .my_div:hover {
 }
+
 h1 {
   overflow: hidden;
 }
@@ -43,7 +62,6 @@ h1 {
 
 .new-text {
 		  background-color: #92c4ce;
-  padding: 5px  ;
 
   color: #000000;
   height: 0;
@@ -60,7 +78,7 @@ h1 {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #2b595f;;
+  background-color: #578d94;;
   padding: 10px;
 }
 .grid-item {
@@ -69,4 +87,12 @@ h1 {
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+  }
 }
