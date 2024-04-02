@@ -6,23 +6,110 @@
 	<meta name="viewport" content="width=device-width">
 	<title>replit</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+</head><!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Learn Spanish</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header styles */
+        header {
+            background-image: url('header.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .navbar-brand img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Grid container styles */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .title {
+            margin: 0;
+            font-size: 24px;
+            color: #343a40;
+        }
+
+        .old-text {
+            color: #888;
+        }
+
+        .new-text {
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
 
-	
-		<header>
-	 <a class="navbar-brand " href="https://www.bellaarcher.com/">
-   <img
-				src="logo-no-background.png"width = "160" height = "160"
-				alt="Archer logo"></a>
+    <header>
+        <a class="navbar-brand " href="https://www.bellaarcher.com/">
+            <img src="logo-no-background.png" width="160" height="160" alt="Archer logo">
+        </a>
+        <h2>Preguntas y oraciones en español</h2>
+    </header>
+
+    <div class="grid-container">
+
 
 	
-	<h2> Preguntas y oraciones en español </h2>
-		</header>
-
-	
-	<div class="grid-container">
 
 		<div class="grid-item">
 			<div class="my_div">
@@ -588,10 +675,8 @@
 	</div>
 
 
+<script src="script.js"></script>
 
-	<script src="script.js"></script>
-
-	
 </body>
 
 </html>
